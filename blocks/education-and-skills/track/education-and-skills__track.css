@@ -1,0 +1,7 @@
+.education-and-skills__track {
+    font-size: 36px;
+    color:bisque;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}

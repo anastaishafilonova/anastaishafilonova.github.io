@@ -1,0 +1,8 @@
+.skills__wrapper {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+.skills__item:hover .skills__wrapper {
+    transform: scale(1.05);
+}

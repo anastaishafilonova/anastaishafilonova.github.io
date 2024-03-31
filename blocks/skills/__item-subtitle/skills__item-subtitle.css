@@ -1,0 +1,16 @@
+.skills__item-subtitle {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 24px;
+    margin-left: 16px;
+    width: 158px;
+    position: absolute;
+    top: 24px;
+    left: 16px;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: black;
+}

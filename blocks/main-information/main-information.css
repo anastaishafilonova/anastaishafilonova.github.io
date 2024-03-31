@@ -1,0 +1,7 @@
+.main-information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
