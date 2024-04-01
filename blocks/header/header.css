@@ -1,5 +1,5 @@
 .header {
-    background-image: linear-gradient(#8e8062, #403929, black);
+    background-color: rgb(29, 28, 26);
     display: flex;
     justify-content: space-around;
     height: fit-content;

@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica, Arial, sans-serif;
-    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(29, 28, 26);
     color: bisque;
 }
