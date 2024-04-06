@@ -1,0 +1,37 @@
+.hobbi__block_type_text-travel {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+}
+.hobbi__block_type_text-cook {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: start;
+}
+.hobbi__block_type_text-cat {
+    grid-column: 1;
+    grid-row: 3;
+    align-self: center;
+}
+.hobbi__block_type_img-cat {
+    grid-column: 2;
+    grid-row: 3;
+}
+.hobbi__block_type_img-sunset {
+    grid-column: 3;
+    grid-row: 2;
+}
+.hobbi__block_type_img-cook {
+    grid-column: 1;
+    grid-row: 2;
+}
+.hobbi__block_type_img-mountain {
+    grid-column: 3;
+    grid-row: 1;
+}
+.hobbi__block_type_text-sunset {
+    grid-column: 3;
+    grid-row: 3;
+    align-self: end;
+    justify-self: end;
+}

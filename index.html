@@ -24,69 +24,123 @@
 <body class="page">
     <header class="header">
         <nav class="menu">
-            <a class="menu__link" href="#main-information">Главная</a>
-            <a class="menu__link" href="#education-and-skills">Образование и навыки</a>
-            <a class="menu__link" href="#">Мои хобби</a>
-            <a class="menu__link" href="#">Контакты</a>
+            <a class="menu__link" href="#main-information">Главная | </a>
+            <a class="menu__link" href="#skills-information">Навыки | </a>
+            <a class="menu__link" href="#hobbi-information">Хобби | </a>
+            <a class="menu__link" href="#footer">Контакты</a>
         </nav>
     </header>
     <section class="main-information" id="main-information">
-        <div class="main-information__description" style="display: flex; flex-direction: column;">
-        <h2 class="main-information__phraze" style="margin:10px 5px 10px 5px; rotate: -5deg; font-size: 30px;">студентка МФТИ</h2>
-        <h2 class="main-information__phraze" style="margin:40px 5px 10px 100px; rotate: 10deg; font-weight: 70;">Junior Java developer</h2>
-        <h2 class="main-information__phraze" style="margin:20px 5px 30px 5px; rotate: -5deg; font-size: 20px;">владею английским на уровне B2</h2>
-        <h2 class="main-information__phraze" style="margin:50px 5px 10px 5px; rotate: 10deg; font-weight: 50; font-size: 20px;">люблю работать в команде</h2>
-        </div>
+        <div class="main-information__description">
+            <h2 class="main-information__phraze main-information__phraze_rotation_minus">студентка МФТИ</h2>
+            <h2 class="main-information__phraze main-information__phraze_rotation_plus">Junior Java developer</h2>
+            <h2 class="main-information__phraze main-information__phraze_rotation_minus">владею английским на уровне B2</h2>
+            <h2 class="main-information__phraze main-information__phraze_rotation_plus">люблю работать в команде</h2>
+            </div>
         <img class="main-information__photo" src="images/iam9.png" alt="Здесь должно быть фото">
-        <div class="main-information__description"  style="display: flex; flex-direction: column;">
-            <h2 class="main-information__phraze" style="margin:10px 10px 30px 5px; rotate: -5deg; font-size: 30px;">студентка ВШПИ</h2>
-            <h2 class="main-information__phraze" style="margin:40px 0px 30px 5px; rotate: 10deg; font-weight: 70; font-size: 20px;">закончила с отличием гимназию</h2>
-            <h2 class="main-information__phraze" style="margin:20px 10px 20px 5px; rotate: -5deg; font-size: 20px;">прошла двухгодичное обучение</h2>
-            <h2 class="main-information__phraze" style="margin:0px 10px 10px 5px; rotate: -5deg; font-weight: 150; font-size: 30px;">в Яндекс Лицее</h2> 
+        <div class="main-information__description">
+            <h2 class="main-information__phraze main-information__phraze_rotation_minus">студентка ВШПИ</h2>
+            <h2 class="main-information__phraze main-information__phraze_rotation_plus">закончила с отличием гимназию</h2>
+            <h2 class="main-information__phraze main-information__phraze_rotation_minus">прошла двухгодичное обучение</h2>
+            <h2 class="main-information__phraze main-information__phraze_rotation_minus">в Яндекс Лицее</h2> 
         </div>
-        <h1 style="font-size: 100px; font-family: 'Courier New', Courier, monospace; font-weight: 100;">Филонова Анастасия</h1>
+        <div class="main-information__title-wrapper">
+            <h1 class="main-information__title ">Филонова Анастасия</h1>
+        </div>
         <p class="main-information__text">Привет! Меня зовут Настя. Я студентка первого курса МФТИ.</p>
     </section>
-    <section class="education-and-skills" id="education-and-skills">
-        <h2 class="education-and-skills__title">Образование и навыки</h2>
-        <div class="education-and-skills__track">
-            <p class="education-and-skills__track__text">Мой образовательный путь:</p> 
-            <ul class="education-and-skills__track__list">
-                <li class="list-element">2012-2023 Гимназия №1 г. Орска</li>
-                <li class="list-element">2019-2021 Яндекс Лицей</li>
-                <li class="list-element">2023-2027 МФТИ Высшая школа программной инженерии</li>
-            </ul>
-        </div>
-        <section class="stack">
-            <div class="skills">
-                <div class="skills__item skills__item_option_python">
-                <div class="skills__wrapper skills__wrapper_option_python"></div>
-                <h3 class="skills__item-title">python</h3>
-                <p class="skills__item-subtitle skills__item-subtitle_option_python">На python я написала сайт, компьютерное приложение и игру</p>                
+    <section class="skills-information" id="skills-information">
+        <h3 class="skills-information__title">Мои навыки</h3>
+        <section class="skills" id="skills">
+            <div class="skills__block">
+                <div class="skills__wrapper-icon">
+                    <img class="skills__icon" src="images/python.jpg" alt="Здесь должна быть картинка">
                 </div>
-                <div class="skills__item skills__item_option_java">
-                    <div class="skills__wrapper skills__wrapper_option_java"></div>
-                    <h3 class="skills__item-title">java</h3>
-                    <p class="skills__item-subtitle skills__item-subtitle_option_java">Участвовала в командном проекте по java</p>                
+                <h3>Python</h3>
+                <p class="skills__description">
+                    Знаю python на уровне ООП. Написала на нём сайт, компьютерное приложение и игру.
+                </p>
+            </div>
+            <div class="skills__block">
+                <div class="skills__wrapper-icon">
+                    <img class="skills__icon" src="images/java.jpg" alt="Здесь должна быть картинка">
                 </div>
-                <div class="skills__item skills__item_option_sql">
-                    <div class="skills__wrapper skills__wrapper_option_sql"></div>
-                    <h3 class="skills__item-title">sql</h3>
-                    <p class="skills__item-subtitle skills__item-subtitle_option_sql">Работала с sql в проектах по python и java</p>                
+                <h3>Java</h3>
+                <p class="skills__description">
+                    Прохожу курс от МТС.Teta. Участвовала в командном проекте, написанном на Java.
+                </p>
+            </div>
+            <div class="skills__block">
+                <div class="skills__wrapper-icon">
+                    <img class="skills__icon" src="images/html.jpg" alt="Здесь должна быть картинка">
                 </div>
-                <div class="skills__item skills__item_option_html-and-css">
-                    <div class="skills__wrapper skills__wrapper_option_html-and-css"></div>
-                    <h3 class="skills__item-title">html and css</h3>
-                    <p class="skills__item-subtitle skills__item-subtitle_option_html-and-css">Провела немало часов в практикуме, чтобы изучить html и css</p>                
+                <h3>HTML and CSS</h3>
+                <p class="skills__description">
+                    Уделила немало времени прохождению курса по веб-разработке на Яндекс Практикуме.
+                </p>
+            </div>
+            <div class="skills__block">
+                <div class="skills__wrapper-icon">
+                    <img class="skills__icon" src="images/sqlR.png" alt="Здесь должна быть картинка">
+                </div>
+                <h3>SQL</h3>
+                <p class="skills__description">
+                    Использовала sql при написании собственных проектов. Прохожу обучение по базам данных в МФТИ.
+                </p>
+            </div>
+        </section>
+    </section>
+    <section class="hobbi-information skills-information" id="hobbi-information">
+        <h3 class="hobbi-information__title skills-information__title">Мои хобби</h3>
+        <section class="hobbi">
+            <div class="hobbi__block hobbi__block_type_img-piter">
+                <div class="hobbi__wrapper-image hobbi__wrapper-image_image_piter">
+                    <img class="hobbi__image" src="images/piter.jpg">
+                </div>
+            </div>
+            <div class="hobbi__block hobbi__block_type_text-travel">
+                <span class="hobbi__title">
+                    <h3 class="hobbi__title">Люблю путешествовать. </h3>
+                    <cite class="hobbi__quote">Ханс Кристиан Андерсен, «Путешествовать — значит жить».</cite>
+                </span>
+            </div>
+            <div class="hobbi__block hobbi__block_type_text-cook">
+                <h3 class="hobbi__title">Раньше увлекалась приготовлением различных десертов. </h3>
+            </div>
+            <div class="hobbi__block hobbi__block_type_text-cat">
+                <h3 class="hobbi__title">Люблю играть со своим котиком. Домашние животные делают нас счастливыми </h3>
+            </div>
+            <div class="hobbi__block hobbi__block_type_text-sunset">
+                <h3 class="hobbi__title">Обожаю фотографировать закаты. Любоваться природой - одно из самых любимых занятий.</h3>
+            </div>
+            <div class="hobbi__block hobbi__block_type_img-mountain">
+                <div class="hobbi__wrapper-image hobbi__wrapper-image_image_piter">
+                    <img class="hobbi__image" src="images/mountain.JPG">
+                </div>
+            </div>
+            <div class="hobbi__block hobbi__block_type_img-sunset">
+                <div class="hobbi__wrapper-image hobbi__wrapper-image_image_piter">
+                    <img class="hobbi__image" src="images/sunset.jpg">
+                </div>
+            </div>
+            <div class="hobbi__block hobbi__block_type_img-cook">
+                <div class="hobbi__wrapper-image hobbi__wrapper-image_image_piter">
+                    <img class="hobbi__image" src="images/cook.jpg">
+                </div>
+            </div>
+            <div class="hobbi__block hobbi__block_type_img-cat">
+                <div class="hobbi__wrapper-image hobbi__wrapper-image_image_piter">
+                    <img class="hobbi__image" src="images/cat.jpg">
                 </div>
             </div>
         </section>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <span class="footer__date">&copy; 2024</span>
+        <h3 class="footer__title">Контакты</h3>
         <nav class="menu">
-            <a class="menu__link" href="filonova.ai@phystech.edu" target="_blank">e-mail</a>
-            <a class="menu__link" href="https://t.me/nasfii" target="_blank">telegram</a>
+            <a class="menu__link" href="#" target="_blank">e-mail: filonova.ai@phystech.edu | </a>
+            <a class="menu__link" href="https://t.me/nasfii" target="_blank">telegram | </a>
             <a class="menu__link" href="https://github.com/anastaishafilonova" target="_blank">github</a>
         </nav>
     </footer>
