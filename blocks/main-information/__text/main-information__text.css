@@ -1,4 +1,6 @@
 .main-information__text {
     font-size: 24px;
     color: bisque;
+    width: fit-content;
+    margin: auto;
 }

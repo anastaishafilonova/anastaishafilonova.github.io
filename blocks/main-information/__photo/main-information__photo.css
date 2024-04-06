@@ -1,6 +1,5 @@
 .main-information__photo {
-    width: 30vw;
+    width: 30%;
     margin-top: 20px;
     border-radius: 25px;
-    position: relative 500px 100px;
 }

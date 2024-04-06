@@ -1,25 +1,174 @@
-/* Основной код для разрешения 1024px */
 @media screen and (min-width: 2560px) {
     /* стили для больших мониторов с разрешением 4K */
+    .page {
+        font-size: 40px;
+    }
 }
-@media screen and (min-width: 1440px) {
+
+@media screen and (max-width: 1440px) {
     /* стили для больших настольных компьютеров и ноутбуков */
+    .page {
+        font-size: 20px;
+    }
+    .hobbi {
+        font-size: 1.2em;
+    }
+    .main-information__phraze {
+        font-size: 0.9em;
+    }
+    .main-information__title {
+        font-size: 1em;
+    }
+    .skills__block {
+        border-radius: 3%;
+    }
+
 }
+
 @media screen and (max-width: 1024px) {
-    /* стили для планшета в альбомной ориентации */
-}
-@media screen and (max-width: 768px) {
     /* стили для планшета */
+    .main-information__phraze {
+        rotate: 0deg;
+        margin: 0 10px 10px 0;
+        font-size: 20px;
+    }
+    .main-information__title {
+        font-size: 0px;
+    }
+    .main-information__text {
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+    }
+    .page {
+        font-size: 20px;
+    }
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        margin: auto;
+        gap: 0.3em;
+        font-size: 1.2em;
+    }
+    .hobbi {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        width: 90%;
+        margin: auto;
+        gap: 0.6em;
+        font-size: 1.2em;
+    }
+    .hobbi__block_type_text-travel {
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: center;
+    }
+    .hobbi__block_type_text-cook {
+        grid-column: 1;
+        grid-row: 3;
+        align-self: center;
+    }
+    .hobbi__block_type_text-cat {
+        grid-column: 1;
+        grid-row: 5;
+        align-self: center;
+    }
+    .hobbi__block_type_img-cat {
+        grid-column: 2;
+        grid-row: 5;
+    }
+    .hobbi__block_type_img-sunset {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .hobbi__block_type_img-cook {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .hobbi__block_type_img-mountain {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .hobbi__block_type_text-sunset {
+        grid-column: 2;
+        grid-row: 4;
+        align-self: end;
+        justify-self: end;
+    }
 }
 @media screen and (max-width: 425px) {
-    /* стили для широкого смартфона */
-}
-@media screen and (max-width: 375px) {
-    /* стили для среднего смартфона */
-}
-@media screen and (max-width: 320px) {
     .main-information__description {
         width: 0px;
         height: 0px;
+        opacity: 0;
+    }
+    .main-information__photo {
+        width: 100%;
+    }
+    .main-information__title {
+        font-size: 25px;
+    }
+    .main-information__text {
+        font-size: 15px;
+        margin: auto;
+    }
+    .page {
+        font-size: 10px;
+    }
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        margin: auto;
+        gap: 0.2em;
+        font-size: 1.3em;
+    }
+    .hobbi {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 90%;
+        margin: auto;
+        gap: 0.6em;
+        font-size: 2em;
+    }
+    .hobbi__block_type_text-travel {
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: center;
+    }
+    .hobbi__block_type_text-cook {
+        grid-column: 1;
+        grid-row: 4;
+        align-self: start;
+    }
+    .hobbi__block_type_text-cat {
+        grid-column: 1;
+        grid-row: 8;
+        align-self: center;
+    }
+    .hobbi__block_type_img-cat {
+        grid-column: 1;
+        grid-row: 9;
+    }
+    .hobbi__block_type_img-sunset {
+        grid-column: 1;
+        grid-row: 7;
+    }
+    .hobbi__block_type_img-cook {
+        grid-column: 1;
+        grid-row: 5;
+    }
+    .hobbi__block_type_img-mountain {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .hobbi__block_type_text-sunset {
+        grid-column: 1;
+        grid-row: 6;
+        align-self: end;
+        justify-self: end;
     }
 }
