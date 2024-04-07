@@ -3,7 +3,7 @@
         transform: scale(1.0);
     }
     to {
-        transform: scale(1.1);
+        transform: scale(1.07);
     }
 }
 
@@ -13,7 +13,7 @@
     font-weight: 100;
     font-size: 1.5em;
 }
-.main-information__phraze:hover {
+.main-information__description:hover .main-information__phraze {
     animation: pulse 1s ease-in-out infinite alternate;
 }
 .main-information__phraze_rotation_plus {

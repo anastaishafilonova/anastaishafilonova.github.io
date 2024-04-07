@@ -3,5 +3,6 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    margin-top: 50px;
     margin-bottom: 50px;
 }

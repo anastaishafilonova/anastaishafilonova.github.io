@@ -1,7 +1,8 @@
 .hobbi__block_type_text-travel {
     grid-column: 2;
     grid-row: 1;
-    justify-self: center;
+    align-self: start;
+    padding: 10px;
 }
 .hobbi__block_type_text-cook {
     grid-column: 2;
@@ -32,6 +33,5 @@
 .hobbi__block_type_text-sunset {
     grid-column: 3;
     grid-row: 3;
-    align-self: end;
-    justify-self: end;
+    align-self: start;
 }

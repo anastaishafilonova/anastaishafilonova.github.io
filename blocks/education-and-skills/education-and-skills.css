@@ -1,9 +1,0 @@
-.education-and-skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    transition: background-image 0.4s ease-in 1s;
-}
-.education-and-skills:hover {
-    background-image: linear-gradient( rgb(29, 28, 26), #c2b28f);
-}

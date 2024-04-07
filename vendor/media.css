@@ -1,7 +1,40 @@
+@media screen and (min-width: 1700px) {
+    .page {
+        font-size: 23px;
+    }
+    .main-information__phraze {
+        margin: 50px 20px 110px 10px;
+    }
+    .music-frame{
+        height: 400px;
+    }
+}
 @media screen and (min-width: 2560px) {
     /* стили для больших мониторов с разрешением 4K */
     .page {
-        font-size: 40px;
+        font-size: 35px;
+    }
+    .main-information__phraze {
+        margin: 50px 20px 110px 10px;
+    }
+}
+
+@media screen and (min-width: 3800px) {
+    /* стили для больших мониторов с разрешением 4K */
+    .page {
+        font-size: 50px;
+    }
+    .main-information__phraze {
+        margin: 50px 20px 110px 10px;
+    }
+}
+@media screen and (min-width: 4500px) {
+    /* стили для больших мониторов с разрешением 4K */
+    .page {
+        font-size: 70px;
+    }
+    .main-information__phraze {
+        margin: 60px 20px 130px 10px;
     }
 }
 
@@ -22,7 +55,6 @@
     .skills__block {
         border-radius: 3%;
     }
-
 }
 
 @media screen and (max-width: 1024px) {
@@ -30,7 +62,7 @@
     .main-information__phraze {
         rotate: 0deg;
         margin: 0 10px 10px 0;
-        font-size: 20px;
+
     }
     .main-information__title {
         font-size: 0px;
@@ -41,24 +73,15 @@
         height: 0px;
     }
     .page {
-        font-size: 20px;
+        font-size: 16px;
     }
     .skills {
-        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(2, 1fr);
-        margin: auto;
-        gap: 0.3em;
-        font-size: 1.2em;
     }
     .hobbi {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 45vw);
         grid-template-rows: auto;
-        width: 90%;
-        margin: auto;
-        gap: 0.6em;
-        font-size: 1.2em;
     }
     .hobbi__block_type_text-travel {
         grid-column: 1;
@@ -107,32 +130,16 @@
     .main-information__photo {
         width: 100%;
     }
-    .main-information__title {
-        font-size: 25px;
-    }
-    .main-information__text {
-        font-size: 15px;
-        margin: auto;
-    }
     .page {
         font-size: 10px;
     }
     .skills {
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
-        margin: auto;
-        gap: 0.2em;
-        font-size: 1.3em;
     }
     .hobbi {
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        width: 90%;
-        margin: auto;
-        gap: 0.6em;
-        font-size: 2em;
     }
     .hobbi__block_type_text-travel {
         grid-column: 1;

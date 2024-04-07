@@ -1,4 +1,8 @@
 .skills__icon {
     border-radius: 50%;
     width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+.skills__block:hover .skills__icon {
+    transform: scale(1.1);
 }

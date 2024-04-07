@@ -1,4 +1,7 @@
 .hobbi__image {
     width: 100%;
-    border: 10px solid rgb(255, 174, 201);
+    border-radius: 10%;
+}
+.hobbi__image:hover {
+    box-shadow: 0px 0px 10px bisque;
 }

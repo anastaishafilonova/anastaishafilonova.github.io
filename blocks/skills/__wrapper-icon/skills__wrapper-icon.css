@@ -1,3 +1,5 @@
 .skills__wrapper-icon {
     width: 70%;
+    overflow: hidden;
+    border-radius: 50%;
 }
