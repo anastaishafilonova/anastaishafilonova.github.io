@@ -5,9 +5,6 @@
     .main-information__phraze {
         margin: 50px 20px 110px 10px;
     }
-    .music-frame{
-        height: 400px;
-    }
 }
 @media screen and (min-width: 2560px) {
     /* стили для больших мониторов с разрешением 4K */
