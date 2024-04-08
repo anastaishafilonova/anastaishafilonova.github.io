@@ -120,9 +120,7 @@
 }
 @media screen and (max-width: 425px) {
     .main-information__description {
-        width: 0px;
-        height: 0px;
-        opacity: 0;
+        display: none;
     }
     .main-information__photo {
         width: 100%;
