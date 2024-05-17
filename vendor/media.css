@@ -173,4 +173,7 @@
         align-self: end;
         justify-self: end;
     }
+    .timer {
+        font-size: 2em;
+    }
 }

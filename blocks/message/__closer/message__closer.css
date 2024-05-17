@@ -1,0 +1,12 @@
+.message__closer {
+    background-color: white;
+    background-image: url(../../../images/closeBtn.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 0px;
+    height: 50px;
+    width: 90%;
+}
+.message__closer:hover {
+    opacity: 0.6;
+}

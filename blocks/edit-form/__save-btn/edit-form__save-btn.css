@@ -1,0 +1,13 @@
+.edit-form__save-btn {
+    width: 100%;
+    height: 50px;
+    background-image: url(../../../images/saveButton.svg);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 0px;
+    cursor: pointer;
+}
+.edit-form__save-btn:hover {
+    opacity: 0.6;
+}

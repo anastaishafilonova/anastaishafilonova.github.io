@@ -1,0 +1,11 @@
+.header__btn {
+    background-color: rgb(255, 174, 201);
+    border: 0px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 0px;
+    color: black;
+    align-self: end;
+    font-size: 1.5em;
+    padding: 10px;
+}

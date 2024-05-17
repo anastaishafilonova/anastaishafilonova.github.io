@@ -1,0 +1,19 @@
+.popup__closer {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    margin: 0px;
+    background-image: url(../../../images/closeIcon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.popup__closer:hover {
+    opacity: 0.6;
+}

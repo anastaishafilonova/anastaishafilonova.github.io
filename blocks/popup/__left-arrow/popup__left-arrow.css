@@ -1,0 +1,9 @@
+.popup__left-arrow {
+    position: fixed;
+    left: 1%;
+    width: 10%;
+    height: 100px;
+    background-image: url(../../../images/left.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}

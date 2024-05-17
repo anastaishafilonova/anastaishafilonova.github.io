@@ -1,0 +1,8 @@
+.edit-form__text {
+    border: 0px;
+    border: #000000 1px solid;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}

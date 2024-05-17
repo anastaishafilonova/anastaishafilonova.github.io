@@ -29,6 +29,7 @@
             <a class="menu__link" href="#hobbi-information">Хобби | </a>
             <a class="menu__link" href="#footer">Контакты</a>
         </nav>
+        <button class="header__btn" type="button">Обратная связь</button>
     </header>
     <section class="main-information" id="main-information">
         <div class="main-information__description">
@@ -45,7 +46,7 @@
             <h2 class="main-information__phraze main-information__phraze_rotation_minus">в Яндекс Лицее</h2> 
         </div>
         <div class="main-information__title-wrapper">
-            <h1 class="main-information__title">Филонова Анастасия</h1>
+            <div class="main-information__title"></div>
         </div>
         <div class="main-information__title-wrapper">
             <p class="main-information__text">Привет! Меня зовут Настя. Я студентка первого курса МФТИ.</p>
@@ -135,6 +136,140 @@
             </div>
         </section>
     </section>
+    <div class="popup popup-form">
+        <div class="popup__container">
+            <h3 class="popup__title">Форма обратной связи</h3>
+            <form class="edit-form" name="form-feedback-header">
+                <label class="edit-form__label" for="form-name">Ваше имя</label>
+                <input class="edit-form__text" id="form-name" type="text" placeholder="Яндекс">
+                <label for="form-feedback" class="edit-form__label">Ваш отзыв</label>
+                <input class="edit-form__text" id="form-feedback" type="text" placeholder="Круто">
+                <button class="edit-form__save-btn" type="submit"></button>
+            </form>
+        </div>
+        <button class="popup__closer">
+        </button>
+    </div>
+    <div class="popup popup-message">
+        <div class="popup__container">
+            <div class="message">
+                <img class="message__img" src="images/message.jpg" alt="Котики">
+                <div class="message__flex-col">
+                    <h3 class="message__title">Сделано с любовью</h3>
+                    <button class="message__closer" type="button"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="hobbi-information gallery-information">
+        <h3 class="hobbi-information__title gallery-information__title">Галерея фотографий</h3>
+        <section class="hobbi gallery">
+            <article class="gallery__photo gallery__photo_option_1">
+            </article>
+            <div class="popup popup-photo">
+                <div class="popup__left-arrow">
+                </div>
+                <div class="popup__photo-container popup__photo-container_option_1"></div>
+                <div class="popup__closer"></div>
+                <div class="popup__right-arrow">
+                </div>
+            </div>
+            <article class="gallery__photo gallery__photo_option_2">
+            </article>
+            <div class="popup popup-photo">
+                <div class="popup__left-arrow">
+                </div>
+                <div class="popup__photo-container popup__photo-container_option_2"></div>
+                <div class="popup__closer"></div>
+                <div class="popup__right-arrow">
+                </div>
+            </div>
+            <article class="gallery__photo gallery__photo_option_3">
+            </article>
+            <div class="popup popup-photo">
+                <div class="popup__left-arrow">
+                </div>
+                <div class="popup__photo-container popup__photo-container_option_3"></div>
+                <div class="popup__closer"></div>
+                <div class="popup__right-arrow">
+                </div>
+            </div>
+            <article class="gallery__photo gallery__photo_option_4">
+            </article>
+            <div class="popup popup-photo">
+                <div class="popup__left-arrow">
+                </div>
+                <div class="popup__photo-container popup__photo-container_option_4"></div>
+                <div class="popup__closer"></div>
+                <div class="popup__right-arrow">
+                </div>
+            </div>
+            <article class="gallery__photo gallery__photo_option_5">
+            </article>
+            <div class="popup popup-photo">
+                <div class="popup__left-arrow">
+                </div>
+                <div class="popup__photo-container popup__photo-container_option_5"></div>
+                <div class="popup__closer"></div>
+                <div class="popup__right-arrow">
+                </div>
+            </div>
+            <article class="gallery__photo gallery__photo_option_6">
+            </article>
+            <div class="popup popup-photo">
+                <div class="popup__left-arrow">
+                </div>
+                <div class="popup__photo-container popup__photo-container_option_6"></div>
+                <div class="popup__closer"></div>
+                <div class="popup__right-arrow">
+                </div>
+            </div>
+            <article class="gallery__photo gallery__photo_option_7">
+            </article>
+            <div class="popup popup-photo">
+                <div class="popup__left-arrow">
+                </div>
+                <div class="popup__photo-container popup__photo-container_option_7"></div>
+                <div class="popup__closer"></div>
+                <div class="popup__right-arrow">
+                </div>
+            </div>
+            <article class="gallery__photo gallery__photo_option_8">
+            </article>
+            <div class="popup popup-photo">
+                <div class="popup__left-arrow">
+                </div>
+                <div class="popup__photo-container popup__photo-container_option_8"></div>
+                <div class="popup__closer"></div>
+                <div class="popup__right-arrow">
+                </div>
+            </div>
+            <article class="gallery__photo gallery__photo_option_9">
+            </article>
+            <div class="popup popup-photo">
+                <div class="popup__left-arrow">
+                </div>
+                <div class="popup__photo-container popup__photo-container_option_9"></div>
+                <div class="popup__closer"></div>
+                <div class="popup__right-arrow">
+                </div>
+            </div>
+            <article class="gallery__photo gallery__photo_option_10">
+            </article>
+            <div class="popup popup-photo">
+                <div class="popup__left-arrow">
+                </div>
+                <div class="popup__photo-container popup__photo-container_option_10"></div>
+                <div class="popup__closer"></div>
+                <div class="popup__right-arrow">
+                </div>
+            </div>
+        </section>
+    </section>  
+    <div class="timer-block">
+        <h3 class="timer-block__title">До первого экзамена осталось</h3>
+        <p class="timer-block__timer timer">До первого экзамена осталось </p>
+    </div>
     <footer class="footer" id="footer">
         <span class="footer__date">&copy; 2024</span>
         <h3 class="footer__title">Контакты</h3>
@@ -144,5 +279,6 @@
             <a class="menu__link" href="https://github.com/anastaishafilonova" target="_blank">github</a>
         </nav>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

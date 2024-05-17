@@ -1,0 +1,12 @@
+.timer-block {
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+.timer {
+    font-size: 4em;
+    margin: 0px;
+}

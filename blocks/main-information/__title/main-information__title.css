@@ -1,5 +1,10 @@
 .main-information__title {
-    font-size: 6em; 
-    font-weight: 100;
-    margin: auto;
+    background-image: url(../../../images/title.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    scale: 3;
+    height: 100px;
+    width: 30%;
+    margin: 20px auto;
 }
