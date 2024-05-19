@@ -140,11 +140,16 @@
         <div class="popup__container">
             <h3 class="popup__title">Форма обратной связи</h3>
             <form class="edit-form" name="form-feedback-header">
-                <label class="edit-form__label" for="form-name">Ваше имя</label>
-                <input class="edit-form__text" id="form-name" type="text" placeholder="Яндекс">
-                <label for="form-feedback" class="edit-form__label">Ваш отзыв</label>
-                <input class="edit-form__text" id="form-feedback" type="text" placeholder="Круто">
-                <button class="edit-form__save-btn" type="submit"></button>
+                <label class="edit-form__label" for="form-email">Электронная почта</label>
+                <input class="edit-form__text form__input" id="form-email" type="email" required placeholder="yandex@yandex.ru">
+                <span class="edit-form__error form-email-error"></span>
+                <label class="edit-form__label" for="form-tel">Ваш телефон</label>
+                <input class="edit-form__text form__input" id="form-tel" type="tel" required minlength="11" maxlength="11" placeholder="89000000000">
+                <span class="edit-form__error form-tel-error"></span>
+                <label for="form-feedback" class="edit-form__label">Ваши пожелания</label>
+                <input class="edit-form__text form__input" id="form-feedback" type="text" required minlength="10" maxlength="100" placeholder="Ваши пожелания">
+                <span class="edit-form__error  form-feedback-error"></span>
+                <button class="edit-form__save-btn form__submit" type="submit"></button>
             </form>
         </div>
         <button class="popup__closer">
@@ -268,7 +273,7 @@
     </section>  
     <div class="timer-block">
         <h3 class="timer-block__title">До первого экзамена осталось</h3>
-        <p class="timer-block__timer timer">До первого экзамена осталось </p>
+        <p class="timer-block__timer timer"></p>
     </div>
     <footer class="footer" id="footer">
         <span class="footer__date">&copy; 2024</span>

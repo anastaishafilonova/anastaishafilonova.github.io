@@ -1,0 +1,10 @@
+.edit-form__error {
+    font-size: 0.8em;
+    color: red;
+    opacity: 0;
+    position: absolute;
+    left: 40vw;
+    width: 30vw;
+    overflow: hidden;
+    background-color: white;
+}

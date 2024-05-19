@@ -7,7 +7,21 @@
     background-size: contain;
     border: 0px;
     cursor: pointer;
+    margin-top: 20px;
 }
 .edit-form__save-btn:hover {
     opacity: 0.6;
+}
+
+.button-loading {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+.button-success {
+    background-image: url(../../../images/saveS.svg);
+}
+
+.button-failure {
+    background-image: url(../../../images/saveF.svg);
 }

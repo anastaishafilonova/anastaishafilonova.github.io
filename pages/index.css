@@ -30,6 +30,9 @@
 @import url(../blocks/edit-form/__text/edit-form__text.css);
 @import url(../blocks/edit-form/__save-btn/edit-form__save-btn.css);
 @import url(../blocks/edit-form/__label/edit-form__label.css);
+@import url(../blocks/edit-form/__error/edit-form__error.css);
+@import url(../blocks/edit-form/__error/_active/edit-form__error_active.css);
+@import url(../blocks/edit-form/__save-btn/_inactive/edit-form__save-btn_inactive.css);
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/_opened/popup_opened.css);
 @import url(../blocks/popup/__title/popup__title.css);

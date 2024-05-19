@@ -1,0 +1,4 @@
+.edit-form__save-btn_inactive {
+    opacity: 0.6;
+    cursor: initial;
+}
