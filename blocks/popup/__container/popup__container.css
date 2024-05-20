@@ -1,5 +1,5 @@
 .popup__container {
     background-color: white;
-    min-width: 50%;
-    border-radius: 10px;
+    width: 50%;
+    border-radius: 0.8em;
 }

@@ -117,6 +117,9 @@
         align-self: end;
         justify-self: end;
     }
+    .timer {
+        font-size: 2em;
+    }
 }
 @media screen and (max-width: 425px) {
     .main-information__description {
@@ -174,6 +177,9 @@
         justify-self: end;
     }
     .timer {
-        font-size: 2em;
+        font-size: 1.5em;
+    }
+    .message__flex-row {
+        width: 30%;
     }
 }

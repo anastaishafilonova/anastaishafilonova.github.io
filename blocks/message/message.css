@@ -1,4 +1,6 @@
 .message {
     display: flex;
     justify-content: space-around;
+    border-radius: 0.8em;
+    width: 90%;
 }
