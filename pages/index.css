@@ -45,8 +45,8 @@
 @import url(../blocks/message/__closer/message__closer.css);
 @import url(../blocks/timer-block/timer-block.css);
 @import url(../blocks/gallery/__photo/gallery__photo.css);
-@import url(../blocks/gallery/__photo/_option/gallery__photo_option.css);
 @import url(../blocks/gallery/gallery.css);
+@import url(../blocks/gallery/__photo/_option/gallery__photo_option.css);
 @import url(../blocks/popup/__photo-container/popup__photo-container.css);
 @import url(../blocks/popup/__left-arrow/popup__left-arrow.css);
 @import url(../blocks/popup/__right-arrow/popup__right-arrow.css);

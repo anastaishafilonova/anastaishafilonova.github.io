@@ -63,45 +63,52 @@ function startTimer() {
       clearInterval(countdown);
       document.querySelector('.timer').innerHTML = "Удачи";
     }
-
-    localStorage["curCount"] = count;
   }, 1000);
 }
 
 startTimer();
 
-function openPhotoPopup(curPopup) {
-    const leftArrow = curPopup.querySelector('.popup__left-arrow');
-    const rightArrow = curPopup.querySelector('.popup__right-arrow');
-    openPopup(curPopup);
-    const curPhoto = curPopup.previousElementSibling;
-    if (curPhoto.previousElementSibling === null) {
-        leftArrow.style.display = 'none';
-    } else {
-        leftArrow.style.display = 'block';
-    }
-    if (curPhoto.nextElementSibling.nextElementSibling === null) {
-        rightArrow.style.display = 'none';
-    } else {
-        rightArrow.style.display = 'block';
-    }
-    leftArrow.addEventListener('click', function () {
-        closePopup(curPopup);
-        openPhotoPopup(curPhoto.previousElementSibling);
+const curPopup = document.querySelector('.popup-photo');
+const leftArrow = curPopup.querySelector('.popup__left-arrow');
+const rightArrow = curPopup.querySelector('.popup__right-arrow');
+
+// галерея
+function openPhotoPopup(curPopup, photoUrl, curPhoto) {
+  const photoContainer = curPopup.querySelector('.popup__photo-container');
+  photoContainer.style.backgroundImage = `${photoUrl}`;
+  if (curPhoto.previousElementSibling === null) {
+      leftArrow.style.display = 'none';
+  } else {
+      leftArrow.style.display = 'block';
+  }
+  if (curPhoto.nextElementSibling === null) {
+      rightArrow.style.display = 'none';
+  } else {
+      rightArrow.style.display = 'block';
+  }
+  leftArrow.addEventListener('click', function () {
+      console.log(curPhoto.previousElementSibling);
+/*         closePopup(curPopup); */
+        openPhotoPopup(curPopup, getComputedStyle(curPhoto.previousElementSibling).backgroundImage, curPhoto.previousElementSibling);
     });
-    rightArrow.addEventListener('click', function () {
-        closePopup(curPopup);
-        openPhotoPopup(curPopup.nextElementSibling.nextElementSibling);
+  rightArrow.addEventListener('click', function () {
+/*         closePopup(curPopup); */
+        openPhotoPopup(curPopup, getComputedStyle(curPhoto.nextElementSibling).backgroundImage, curPhoto.nextElementSibling);
     });
 }
 
+
 photos.forEach(function (item) {
     item.addEventListener('click', function(event) {
-        const curPhoto = event.target;
-        const curPopup = curPhoto.nextElementSibling;
-        const leftArrow = curPopup.querySelector('.popup__left-arrow');
-        const rightArrow = curPopup.querySelector('.popup__right-arrow');
-        openPhotoPopup(curPopup);
+        let curPhoto = event.target;
+        console.log(curPhoto);
+        
+        console.log(curPhoto);
+        console.log(getComputedStyle(curPhoto).backgroundImage);
+/*         const leftArrow = curPopup.querySelector('.popup__left-arrow');
+        const rightArrow = curPopup.querySelector('.popup__right-arrow'); */
+        openPopup(curPopup);
+        openPhotoPopup(curPopup, getComputedStyle(curPhoto).backgroundImage, curPhoto);
         });
 });
 
@@ -120,7 +127,15 @@ const hideInputError = (formElement, inputElement) => {
 };
   
 const checkInputValidity = (formElement, inputElement) => {
-    if (!inputElement.validity.valid) {
+    if (inputElement.getAttribute('id') === 'form-email') {
+      if (!(/^[a-z0-9_]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,3}$/.test(inputElement.value))) {
+        showInputError(formElement, inputElement, "Некорректное значение");
+      }
+      else {
+        hideInputError(formElement, inputElement);
+      }
+    }
+    else if (!inputElement.validity.valid) {
       showInputError(formElement, inputElement, inputElement.validationMessage);
     } else {
       hideInputError(formElement, inputElement);
@@ -193,6 +208,7 @@ function submitForm(form) {
           let inputList = Array.from(form.querySelectorAll('.form__input'));
           inputList.forEach(input => input.value='');
           setTimeout(closePopup(form.parentElement.parentElement), 5000)
+          btn.classList.remove("button-success");
         } else {
           btn.value = "Ошибка!";
           btn.classList.remove("button-loading");
